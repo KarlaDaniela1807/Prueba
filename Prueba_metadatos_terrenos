@@ -1,0 +1,889 @@
+<gmd:MD_Metadata xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
+	<gmd:characterSet>
+		<gmd:MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+	</gmd:characterSet>
+	<gmd:fileIdentifier>	
+		<gco:CharacterString> METADATA ASSOCIATED TO ELECTRONIC TERRAIN DATA </gco:CharacterString>
+	</gmd:fileIdentifier>
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName> 
+				<gco:CharacterString>José Ignacio Rodríguez Modroño</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString> Everis Aeroespacial y Defensa</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact id="CIC_S1">
+					<gmd:phone>
+						<gmd:CI_Telephone id="CIT_S1">
+							<gmd:voice>
+								<gco:CharacterString>917490000</gco:CharacterString>
+							</gmd:voice>
+						</gmd:CI_Telephone>
+					</gmd:phone>
+					<gmd:address>
+						<gmd:CI_Address id="CIA_S1">
+							<gmd:deliveryPoint>
+								<gco:CharacterString>Camino Fuente de la Mora n1</gco:CharacterString>
+							</gmd:deliveryPoint>
+							<gmd:city>
+								<gco:CharacterString>Madrid</gco:CharacterString>
+							</gmd:city>
+							<gmd:postalCode>
+								<gco:CharacterString>28050</gco:CharacterString>
+							</gmd:postalCode>
+							<gmd:country>
+								<gco:CharacterString>Spain</gco:CharacterString>
+							</gmd:country>
+						</gmd:CI_Address>
+					</gmd:address>
+					<gmd:onlineResource>
+						<gmd:CI_OnlineResource id="CIOR_S1">
+							<gmd:linkage>
+								<gmd:URL>https://www.everis.com/spain/es/industries/aerospace-defense</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gmd:onlineResource>
+					<gmd:hoursOfService>
+						<gco:CharacterString>9:00 to 19:00</gco:CharacterString>
+					</gmd:hoursOfService>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<CI_RoleCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">Data Originator</CI_RoleCode>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:hierarchyLevel>
+		<gmd:MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+	</gmd:hierarchyLevel>
+	<gmd:dateStamp>
+		<gco:DateTime>2020-08-05T00:00:00.00Z</gco:DateTime>
+	</gmd:dateStamp>
+	<gmd:UnitOfMeasure>
+		<gco:UomLength>meter</gco:UomLength>
+	</gmd:UnitOfMeasure>
+	<gmd:recdSurf>
+		<gco:CharacterString> Reflective surface</gco:CharacterString>
+	</gmd:recdSurf>
+	<gmd:penetrationLevel>
+		<gco:CharacterString>LPI (laser penetration rate): 0.66 </gco:CharacterString>
+	</gmd:penetrationLevel>
+	<gmd:surfType>
+		<gco:CharacterString> Marshland, water, permanent ice,etc</gco:CharacterString>
+	</gmd:surfType>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_identifier>
+					<gmd:code>
+						<gco:CharacterString>EPSG:25830 - ETRS84/UTM zone 30</gco:CharacterString>
+					</gmd:code>
+					<gmd:codeSpace>
+						<gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:version> <!--optional-->
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:version> 
+				</gmd:RS_identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+		<gmd:MD_CRS>
+			<gmd:projection>
+				<gmd:RS_identifier>
+					<gmd:codeSpace>
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:version> <!--optional-->
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:version> 
+				</gmd:RS_identifier>
+			</gmd:projection>
+			<gmd:elipsoid>
+				<gmd:RS_identifier>
+					<gmd:codeSpace>
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:version>
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:version><!--optional-->
+				</gmd:RS_identifier>
+			</gmd:elipsoid>
+			<gmd:datum>
+				<gmd:RS_identifier>
+					<gmd:codeSpace>
+						<gco:CharacterString>EGM_96</gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:version> <!--optional-->
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:version>
+				</gmd:RS_identifier>
+			</gmd:datum>
+			<gmd:projectionParameters>
+				<gmd:MD_ProjectionParameters>
+					<gmd:falseEasting>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:falseEasting>
+					<gmd:falseEastingNorthingUnits>
+						<gco:UomLength>XXXX</gco:UomLength>
+					</gmd:falseEastingNorthingUnits>
+					<gmd:falseNorthing>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:falseNorthing>
+					<gmd:heightOfProspectivePointAboveSurface>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:heightOfProspectivePointAboveSurface>
+					<gmd:latitudeOfProjectionCenter>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:latitudeOfProjectionCenter>
+					<gmd:latitudeOfProjectionOrigin>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:latitudeOfProjectionOrigin>
+					<gmd:longitudeOfCentralMeridian>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:longitudeOfCentralMeridian>
+					<gmd:longitudeOfProjectionCenter>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:longitudeOfProjectionCenter>
+					<gmd:scaleFactorAtCenterLine>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:scaleFactorAtCenterLine>
+					<gmd:scaleFactorAtEquator>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:scaleFactorAtEquator>
+					<gmd:scaleFactorAtProjectionOrigin>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:scaleFactorAtProjectionOrigin>
+					<gmd:standardParalell>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:standardParalell>
+					<gmd:straightVerticalLongitudeFromPole>
+						<gco:Decimal>XXXX</gco:Decimal>
+					</gmd:straightVerticalLongitudeFromPole>
+					<gmd:zone>
+						<gco:Integer>XXX</gco:Integer>
+					</gmd:zone>
+				</gmd:MD_ProjectionParameters>
+			</gmd:projectionParameters>
+		</gmd:MD_CRS>
+	</gmd:referenceSystemInfo>
+	<gmd:spatialRepresentationInfo>
+		<gmd:MD_SpatialRepresentation>
+			<gmd:MD_GridSpatialRepresentation>
+				<gmd:numberOfDimensions>
+					<gco:Integer>XXXX</gco:Integer>
+				</gmd:numberOfDimensions>
+				<gmd:axisDimensionsProperties>
+					<gmd:MD_Dimension>
+						<gmd:dimensionName>
+							<MD_DimensionNameTypeCode codeList="http://www.isotc211.org/2005/resources/CodeList.xml#MD_DimensionNameTypeCode" codeListValue="row/column">XXXX</MD_DimensionNameTypeCode>
+						</gmd:dimensionName>
+						<gmd:dimensionSize>
+							<gco:Integer>n</gco:Integer>
+						</gmd:dimensionSize>
+						<gmd:resolution>
+							<gco:Measure>XXXX</gco:Measure>
+						</gmd:resolution>
+					</gmd:MD_Dimension>
+				</gmd:axisDimensionsProperties>
+				<gmd:cellGeometry>
+					<gmd:MD_CellGeometryCode codeList="http://www.isotc211.org/2005/resources/CodeList.xml#MD_CellGeometryCode" codeListValue="area">XXXX</gmd:MD_CellGeometryCode>
+				</gmd:cellGeometry>
+				<gmd:transformationParameterAvailability>
+					<gco:Boolean>YES</gco:Boolean>
+				</gmd:transformationParameterAvailability>
+			</gmd:MD_GridSpatialRepresentation>
+		</gmd:MD_SpatialRepresentation>
+	</gmd:spatialRepresentationInfo>
+	<gmd:identificationInfo> 
+		<gmd:MD_identification>
+			<gmd:citation>
+				<gmd:CI_Citation id="CIC_1">
+					<gmd:title>
+						<gco:CharacterString>Data Source Identifier</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date id="CID_1">
+							<gmd:date>
+								<gco:DateTime>2020-08-05T00:00:00.00Z</gco:DateTime>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">Metadata creation</gmd:CI_DateTypeCode>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:abstract>
+				<gco:CharacterString>This file contains the metadata of terrain data set defined as mandatory with respect to the ICAO Annex 15 </gco:CharacterString>
+			</gmd:abstract>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty id="CIRP_S2">
+					<gmd:individualName>
+						<gco:CharacterString>Cali Airport</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>Aerocivil</gco:CharacterString>
+					</gmd:organisationName>
+						<gmd:contactInfo>
+							<gmd:CI_Contact id="CIC_S2">
+								<gmd:phone>
+									<gmd:CI_Telephone id="CIT_S2">
+										<gmd:voice>
+											<gco:CharacterString>913211000</gco:CharacterString>
+										</gmd:voice>
+									</gmd:CI_Telephone>
+								</gmd:phone>
+								<gmd:address>
+									<gmd:CI_Address id="CIA_S2">
+										<gmd:deliveryPoint>
+											<gco:CharacterString>Av. Eldorado 103-15</gco:CharacterString>
+										</gmd:deliveryPoint>
+										<gmd:city>
+											<gco:CharacterString>Bogotá D.C.</gco:CharacterString>
+										</gmd:city>
+										<gmd:country>
+											<gco:CharacterString>Colombia</gco:CharacterString>
+										</gmd:country>
+										<gmd:electronicMailAddress>
+											<gco:CharacterString>atencionalciudadano@aerocivil.gov.co</gco:CharacterString>
+										</gmd:electronicMailAddress>
+									</gmd:CI_Address>
+								</gmd:address>
+							</gmd:CI_Contact>
+						</gmd:contactInfo>
+						<gmd:role>
+							<gmd:CI_RoleCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">Point of Contact</gmd:CI_RoleCode>
+						</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<gmd:resourceConstraints>
+				<gmd:MD_Constraints id="MDC_S1">
+					<gmd:useLimitation>
+						<gco:CharacterString>The data set belongs to Aerocivil</gco:CharacterString>
+					</gmd:useLimitation>
+				</gmd:MD_Constraints>
+			</gmd:resourceConstraints>
+			<gmd:language>
+				<gco:CharacterString>English</gco:CharacterString>
+			</gmd:language>
+			<gmd:spatialRepresentationType> <!--optional-->
+				<gmd:MD_SpatialRepresentationTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+			</gmd:spatialRepresentationType>
+			<gmd:spatialResolution> <!--opcional-->
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>10000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gmd:spatialResolution>
+			<gmd:topicCategory>
+				<gmd:MD_TopicCategoryCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode" codeListValue="elevation">elevation</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<gmd:resourceMaintenance>
+				<gmd:MD_MaintenanceInformation>
+					<gmd:contact> <!--Optional-->
+						<gmd:CI_ResponsibleParty>
+							<gmd:individualName> 
+								<gco:CharacterString>Aerocivil</gco:CharacterString>
+							</gmd:individualName>
+							<gmd:organisationName>
+								<gco:CharacterString>Aerocivil</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:role>
+								<gmd:CI_RoleCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">Data Publisher</CI_RoleCode>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:contact>
+					<gmd:maintenanceAndUpdateFrequency>
+						<gmd:MD_MaintenanceFrequencyCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MaintenanceFrequencyCode" codeListValue="irregular">data is updated in intervals that are uneven in duration</MD_MaintenanceFrequencyCode>
+					</gmd:maintenanceAndUpdateFrequency>
+					<gmd:maintenanceNote> <!--optional-->
+						<gco:CharacterString>XXX</gco:CharacterString>
+					</gmd:maintenanceNote>
+				</gmd:MD_MaintenanceInformation>
+			</gmd:resourceMaintenance>
+			<gmd:resourceFormat> <!--solo aparece en DOC 9881, uso desconocido-->
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString> XXXX</gco:CharacterString>
+					</gmd:version>
+				</gmd:MD_Format>
+			</gmd:resourceFormat>
+			<gmd:extent> <!--incluido dentro de MD_identification en los ejemplos. Según OACI iría en un primer nivel-->
+				<gmd:EX_Extent id="EXT_A1">
+					<gmd:description>
+						<gco:CharacterString>Area of coverage</gco:CharacterString>
+					</gmd:description>
+					<gmd:geographicElement>
+						<gmd:EX_BoundingPolygon>
+							<gmd:polygon>
+								<gml:Polygon gml:id="EXBPOLY" srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+									<gml:exterior>
+										<gml:LinearRing>
+											<gml:posList>-3.70583401 40.57920638 -3.64397144 40.61460365 -3.61502984 40.57673466 -3.58709154 40.58585266 -3.60295225 40.66695122 -3.53057459 40.66773374 -3.54729864 40.58562078 -3.50852640 40.57212536 -3.46185931 40.46721200 -3.47896510 40.43381463 -3.40033302 40.37514861 -3.45984991 40.33647154 -3.51342480 40.40632076 -3.53741441 40.40065709 -3.52987105 40.36522739 -3.54662513 40.36472213 -3.54487715 40.35575741 -3.60297281 40.35675097 -3.59173744 40.41321027 -3.64537896 40.46932393 -3.64655342 40.53340834 -3.70583401 40.57920638</gml:posList>
+										</gml:LinearRing>
+									</gml:exterior>
+								</gml:Polygon>
+							</gmd:polygon>
+						</gmd:EX_BoundingPolygon>
+					</gmd:geographicElement>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent>
+							<gmd:extent>
+								<gml:TimePeriod gml:id="id_2">
+									<gml:beginPosition>2020-08-04T00:00:00.00Z</gml:beginPosition>
+									<gml:endPosition indeterminatePosition="unknown"/>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+		</gmd:MD_identification>
+	</gmd:identificationInfo>
+	<gmd:distribbutionInfo>
+		<gmd:MD_Distribution>
+			<gmd:distributor>
+				<gmd:MD_Distributor>
+					<gmd:distributorContact>
+						<gmd:CI_ResponsibleParty>
+							<gmd:individualName> 
+								<gco:CharacterString>Aerocivil</gco:CharacterString>
+							</gmd:individualName>
+							<gmd:organisationName>
+								<gco:CharacterString>Aerocivil</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:role>
+								<gmd:CI_RoleCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">Data publisher</gmd:CI_RoleCode>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:distributorContact>
+				</gmd:MD_Distributor>
+			</gmd:distributor>
+			<gmd:distributorFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>TIFF</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>version 1.0</gco:CharacterString>
+					</gmd:version>
+				</gmd:MD_Format>
+				<gmd:distributorTransferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:online>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>http://www.aerocivil.gov.co/</gmd:URL>
+								</gmd:linkage>
+							</gmd:CI_OnlineResource>
+						</gmd:online>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:distributorTransferOptions>
+			</gmd:distributorFormat>
+		</gmd:MD_Distribution>
+	</gmd:distribbutionInfo>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality id="DQDQ_A1">
+			<gmd:scope>
+				<gmd:DQ_Scope id="DQS_A1">
+					<gmd:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+					</gmd:level>
+					<gmd:extent>
+						<gmd:EX_Extent id="EXE_A1">
+							<gmd:description>
+								<gco:CharacterString>Area 2</gco:CharacterString>
+							</gmd:description>
+							<gmd:geographicElement>
+								<gmd:EX_GeographicBoundingBox id="EXGBB_A1">
+									<gmd:westBoundLongitude>
+										<gco:Decimal>-3.597323</gco:Decimal>
+									</gmd:westBoundLongitude>
+									<gmd:eastBoundLongitude>
+										<gco:Decimal>-3.533464</gco:Decimal>
+									</gmd:eastBoundLongitude>
+									<gmd:southBoundLatitude>
+										<gco:Decimal>40.426715</gco:Decimal>
+									</gmd:southBoundLatitude>
+									<gmd:northBoundLatitude>
+										<gco:Decimal>40.468990</gco:Decimal>
+									</gmd:northBoundLatitude>
+								</gmd:EX_GeographicBoundingBox>
+							</gmd:geographicElement>
+						</gmd:EX_Extent>
+					</gmd:extent>
+				</gmd:DQ_Scope>
+			</gmd:scope>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAHA_A1">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Absolute Horizontal Accurracy for Area 2</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The absolute horizontal accuracy of terrain in Area 2 is determined by a control survey</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The horizontal accuracy is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRHA_A1">
+							<gmd:valueType>
+								<gco:RecordType>The horizontal accuracy of terrain in Area 2 must be better than 5M at a 90% confidence level</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_1">
+									<gml:identifier codeSpace="id">UD_UCUM_1</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:errorStatistic>
+								<gco:CharacterString>Standard desviation at 90% level</gco:CharacterString>
+							</gmd:errorStatistic>
+							<gmd:value>
+								<gco:Record>5</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAVA_A1">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Absolute Vertical Accurracy for Area 2</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The absolute vertical accuracy of terrain in Area 2 is determined by a control survey</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The vertical accuracy is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRVA_A1">
+							<gmd:valueType>
+								<gco:RecordType>The vertical accuracy of terrain in Area 2 must be better than 3M at a 90% confidence level</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_2">
+									<gml:identifier codeSpace="id">UD_UCUM_2</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:errorStatistic>
+								<gco:CharacterString>Standard desviation at 90% level</gco:CharacterString>
+							</gmd:errorStatistic>
+							<gmd:value>
+								<gco:Record>3</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAHR_A1">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Horizontal resolution for Area 2</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The Horizontal resolution of the terrain in Area 2 indicates the number of places of digits/units to which the horizontal position of the elevation point has been determined</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The horizontal resolution is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRHR_A1">
+							<gmd:valueType>
+								<gco:RecordType>The horizontal resolution in Area 2 must be better than 0.1M</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_3">
+									<gml:identifier codeSpace="id">UD_UCUM_3</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>0.1</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+						</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAVR_A1">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Vertical resolution for Area 2</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The Vertical resolution of the terrain in Area 2 indicates the number of places of digits/units to which the horizontal position of the obstacles has been determined</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The vertical resolution is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRVR_A1">
+							<gmd:valueType>
+								<gco:RecordType>The Vertical resolution in Area 2 must be better than 0.1M</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_4">
+									<gml:identifier codeSpace="id">UD_UCUM_4</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>0.1</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAVR_A2">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Post spacing for Area 2</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The Post spacing in Area 2 indicates the angular or linear distance between two adjacent elevation points.</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directInternal">method of evaluating the quality of a dataset based on inspection of items within the dataset, where all data required is internal to the dataset</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The post spacing is determined by internal control tests using conventional ad-hoc algorithms</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRVR_A2">
+							<gmd:valueType>
+								<gco:RecordType>The post spacing in Area 2 must be better than 1 arc seconds (approx. 30 m)</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:uom:OGC:1.0:degree">
+								<gml:UnitDefinition gml:id="UD_UCUM_9">
+									<gml:identifier codeSpace="id">UD_UCUM_9</gml:identifier>
+									<gml:name>angular degree</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>0.0003</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:lineage>
+				<gmd:LI_Lineage id="DQLI_A1">
+					<gmd:source>
+						<gmd:LI_Source id="DQLIS_A1">
+							<gmd:description>
+								<gco:CharacterString>Integrity of the data set for terrain in Area 2: Essential</gco:CharacterString>
+							</gmd:description>
+							<gmd:scaleDenominator>
+								<gmd:MD_RepresentativeFraction id="DQLIMDRF_A1">
+									<gmd:denominator>
+										<gco:CharacterString>Essential</gco:CharacterString> <!-- DUDA -->
+									</gmd:denominator>
+								</gmd:MD_RepresentativeFraction>
+							</gmd:scaleDenominator>
+								</gmd:LI_Source>
+					</gmd:source>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+	<!-- Area 3 -->
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality id="DQDQ_A2">
+			<gmd:scope>
+				<gmd:DQ_Scope id="DQS_A2">
+					<gmd:level>
+						<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+					</gmd:level>
+					<gmd:extent>
+						<gmd:EX_Extent id="EXE_A2">
+							<gmd:description>
+								<gco:CharacterString>Area 3</gco:CharacterString>
+							</gmd:description>
+							<gmd:geographicElement>
+								<gmd:EX_GeographicBoundingBox id="EXGBB_A2">
+									<gmd:westBoundLongitude>
+										<gco:Decimal>-3.597323</gco:Decimal>
+									</gmd:westBoundLongitude>
+									<gmd:eastBoundLongitude>
+										<gco:Decimal>-3.533464</gco:Decimal>
+									</gmd:eastBoundLongitude>
+									<gmd:southBoundLatitude>
+										<gco:Decimal>40.426715</gco:Decimal>
+									</gmd:southBoundLatitude>
+									<gmd:northBoundLatitude>
+										<gco:Decimal>40.468990</gco:Decimal>
+									</gmd:northBoundLatitude>
+								</gmd:EX_GeographicBoundingBox>
+							</gmd:geographicElement>
+						</gmd:EX_Extent>
+					</gmd:extent>
+				</gmd:DQ_Scope>
+			</gmd:scope>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAHA_A2">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Absolute Horizontal Accurracy for Area 3</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The absolute horizontal accuracy of the obstacles in Area 3 is determined by a control survey</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The horizontal accuracy is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRHA_A2">
+							<gmd:valueType>
+								<gco:RecordType>The horizontal accuracy of obstacles in Area 3 must be better than 0.5M at a 90% confidence level</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_5">
+									<gml:identifier codeSpace="id">UD_UCUM_5</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:errorStatistic>
+								<gco:CharacterString>Standard desviation at 90% level</gco:CharacterString>
+							</gmd:errorStatistic>
+							<gmd:value>
+								<gco:Record>0.5</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAVA_A2">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Absolute Vertical Accurracy for Area 3</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The absolute vertical accuracy of the obstacles in Area 3 is determined by a control survey</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The vertical accuracy is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRVA_A2">
+							<gmd:valueType>
+								<gco:RecordType>The vertical accuracy of obstacles in Area 3 must be better than 0.5M at a 90% confidence level</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_6">
+									<gml:identifier codeSpace="id">UD_UCUM_6</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:errorStatistic>
+								<gco:CharacterString>Standard desviation at 90% level</gco:CharacterString>
+							</gmd:errorStatistic>
+							<gmd:value>
+								<gco:Record>0.5</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAHR_A2">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Horizontal resolution for Area 3</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The Horizontal resolution of the obstacles in Area 3 indicates the number of places of digits/units to which the horizontal position of the obstacles has been determined</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The horizontal resolution is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRHR_A2">
+							<gmd:valueType>
+								<gco:RecordType>The horizontal resolution in Area 3 must be better than 0.1M</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_7">
+									<gml:identifier codeSpace="id">UD_UCUM_7</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>0.1</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+						</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAVR_A3">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Vertical resolution for Area 3</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The Vertical resolution of the obstacles in Area 3 indicates the number of places of digits/units to which the horizontal position of the obstacles has been determined</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directExternat">Method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The vertical resolution is determined by independent control surveys using conventional terrestrial survey. The surveyor has to provide evidence that the control survey is at least three times better than the accuracy requirement</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRVR_A3">
+							<gmd:valueType>
+								<gco:RecordType>The Vertical resolution in Area 3 must be better than 0.01M</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:UCUM::m">
+								<gml:UnitDefinition gml:id="UD_UCUM_8">
+									<gml:identifier codeSpace="id">UD_UCUM_8</gml:identifier>
+									<gml:name>meters</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>0.01</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy id="DQPAVR_A4">
+					<gmd:nameOfMeasure>
+						<gco:CharacterString>Post spacing for Area 3</gco:CharacterString>
+					</gmd:nameOfMeasure>
+					<gmd:measureDescription>
+						<gco:CharacterString>The Post spacing in Area 3 indicates the angular or linear distance between two adjacent elevation points.</gco:CharacterString>
+					</gmd:measureDescription>
+					<gmd:evaluationMethodType>
+						<gmd:DQ_EvaluationMethodTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml" codeListValue="directInternal">method of evaluating the quality of a dataset based on inspection of items within the dataset, where all data required is internal to the dataset</gmd:DQ_EvaluationMethodTypeCode>
+					</gmd:evaluationMethodType>
+					<gmd:evaluationMethodDescription>
+						<gco:CharacterString>The post spacing is determined by internal control tests using conventional ad-hoc algorithms</gco:CharacterString>
+					</gmd:evaluationMethodDescription>
+					<gmd:dateTime>
+						<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+					</gmd:dateTime>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult id="DQPAQRVR_A4">
+							<gmd:valueType>
+								<gco:RecordType>The post spacing in Area 3 must be better than 0.6 arc seconds (approx. 20 m)</gco:RecordType>
+							</gmd:valueType>
+							<gmd:valueUnit xlink:href="urn:ogc:def:uom:OGC:1.0:degree">
+								<gml:UnitDefinition gml:id="UD_UCUM_9">
+									<gml:identifier codeSpace="id">UD_UCUM_9</gml:identifier>
+									<gml:name>angular degree</gml:name>
+								</gml:UnitDefinition>
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>0.0002</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:lineage>
+				<gmd:LI_Lineage id="DQLI_A2">
+					<gmd:source>
+						<gmd:LI_Source id="DQLIS_A2">
+							<gmd:description>
+								<gco:CharacterString>Integrity of the data set for terrain in Area 3: Essential</gco:CharacterString>
+							</gmd:description>
+							<gmd:scaleDenominator>
+								<gmd:MD_RepresentativeFraction id="DQLIMDRF_A2">
+									<gmd:denominator>
+										<gco:CharacterString>Essential</gco:CharacterString> <!-- DUDA -->
+									</gmd:denominator>
+								</gmd:MD_RepresentativeFraction>
+							</gmd:scaleDenominator>
+						</gmd:LI_Source>
+					</gmd:source>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+</gmd:MD_Metadata>
+<gmi:MI_Metadata>
+	<gmi:acquisitionInformation>
+		<gmi:MI_AcquisitionInformation id="MIACI_s1">
+			<gmi:platform>
+				<gmi:citation>
+					<gmi:CI_Citation id="CIC_2">
+						<gmd:title>
+							<gco:CharacterString>Platform used to acquire the data</gco:CharacterString>
+						</gmd:title>
+						<gmd:date>
+							<gmd:CI_Date id="CID_2">
+								<gmd:date>
+									<gco:DateTime>2019-05-26T00:00:00.00Z</gco:DateTime>
+								</gmd:date>
+								<gmd:dateType>
+									<gmd:CI_DateTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">flight date</gmd:CI_DateTypeCode>
+								</gmd:dateType>
+							</gmd:CI_Date>
+						</gmd:date>
+					</gmi:CI_Citation>
+				</gmi:citation>
+				<gmd:description>
+					<gco:CharacterString>Airborn sensors: LIDAR and RGB camera. </gco:CharacterString>
+				</gmd:description>
+			</gmi:platform>
+	</gmi:acquisitionInformation>
+</gmi:MI_Metadata>	
